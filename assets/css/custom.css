@@ -1,0 +1,7 @@
+#main-content header h1 {
+  color: rgba(var(--color-primary-600));
+}
+
+.prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: rgba(var(--color-primary-400));
+}
