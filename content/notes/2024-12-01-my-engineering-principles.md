@@ -1,7 +1,8 @@
 ---
 title: "My Engineering Principles"
 date: 2024-12-01T17:04:00
-description: "An attempt to describe the principles by which I judge (my own) engineering"
+aliases:
+- my-engineering-principles
 ---
 I created this by thinking about concrete things and trying to generalize them, but I don't want principles that are too general.  Did I succeed?  I'm not sure.
 

@@ -15,4 +15,4 @@ outputs:
 
 permalinks:
   page:
-    notes: "/notes/:slug/"
+    notes: "/notes/:filename/"
