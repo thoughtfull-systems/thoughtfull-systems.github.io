@@ -26,6 +26,6 @@ These guiding engineering principles are numbered for easy reference.  The order
 1. **Things should self-describe and require as little context as possible.**  The more you can understand directly and locally the easier it is to use, understand, and extend.
 
 Discuss on:
-- [X](https://x.com/technosophist/status/1863398149450014783)
+- [ X](https://x.com/technosophist/status/1863398149450014783)
 - [Bluesky](https://bsky.app/profile/technosophist.bsky.social/post/3lcbypgkm2s2j)
 - [ActivityPub](https://social.thoughtfull.systems/@technosophist/statuses/01JE277D24ZJZ0MM33XE7TC157)
