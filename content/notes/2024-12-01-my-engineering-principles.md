@@ -24,3 +24,8 @@ These guiding engineering principles are numbered for easy reference.  The order
 1. **The core should be stable and slow to change.**  I prefer affordances for organized, controlled user extension rather than frequently modifying the core.  If something makes it into the core, ideally it has proven itself first as an extension.
 1. **Changes should be non-breaking.**  Accept more lenient inputs.  Choose defaults for new inputs.  Produce stricter outputs.  Choose new names for new functionality (namespaces are helpful here).
 1. **Things should self-describe and require as little context as possible.**  The more you can understand directly and locally the easier it is to use, understand, and extend.
+
+Discuss on:
+- [X](https://x.com/technosophist/status/1863398149450014783)
+- [Bluesky](https://bsky.app/profile/technosophist.bsky.social/post/3lcbypgkm2s2j)
+- [ActivityPub](https://social.thoughtfull.systems/@technosophist/statuses/01JE277D24ZJZ0MM33XE7TC157)
