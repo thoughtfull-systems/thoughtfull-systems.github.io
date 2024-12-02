@@ -1,6 +1,6 @@
 ---
 title: "My Engineering Principles"
-date: 2024-12-01
+date: 2024-12-01T17:04:00-05:00
 aliases:
 - my-engineering-principles
 ---
