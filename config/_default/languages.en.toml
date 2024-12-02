@@ -10,7 +10,7 @@ title = "Thoughtfull Systems"
   dateFormat = "2 January 2006"
 
   # mainSections = [ "topics", "notes" ]
-  description = "inventive, creative, kind"
+  description = "Having fun discovering how things work and why they're here."
 
 [params.author]
   name = "technosophist"
