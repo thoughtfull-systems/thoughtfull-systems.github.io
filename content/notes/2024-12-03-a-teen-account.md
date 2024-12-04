@@ -59,3 +59,8 @@ Nope, the best thing you can do in 2024 is create a Google calendar reminder to 
 Alliant or CapitalOne MONEY could work.  If you want Zelle just connect it to your debit card.  If you want Venmo, then your teen needs a smart phone (or at least a phone number).
 
 If you want to setup a recurring payment, then you must use carrier pidgins.  Good luck!
+
+Discuss on:
+- [X](https://x.com/technosophist/status/1864142875203657829)
+- [Bluesky](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lch5zyiss22z)
+- [ActivityPub](https://enafore.thoughtfull.systems/statuses/01JE7ST4NTYG7XPS7GYKCHW302/social.thoughtfull.systems/@technosophist/statuses/01JE7ST4NTYG7XPS7GYKCHW302)
