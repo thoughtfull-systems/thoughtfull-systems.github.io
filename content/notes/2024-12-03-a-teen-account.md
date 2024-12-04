@@ -61,6 +61,6 @@ Alliant or CapitalOne MONEY could work.  If you want Zelle just connect it to yo
 If you want to setup a recurring payment, then you must use carrier pidgins.  Good luck!
 
 Discuss on:
-- [X](https://x.com/technosophist/status/1864142875203657829)
+- [ X](https://x.com/technosophist/status/1864142875203657829)
 - [Bluesky](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lch5zyiss22z)
 - [ActivityPub](https://enafore.thoughtfull.systems/statuses/01JE7ST4NTYG7XPS7GYKCHW302/social.thoughtfull.systems/@technosophist/statuses/01JE7ST4NTYG7XPS7GYKCHW302)
