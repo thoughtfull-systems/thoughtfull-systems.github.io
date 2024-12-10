@@ -1,5 +1,5 @@
 ---
-title: "2024-09-27 Linkly roundup"
+title: "2024-09-27 linkly roundup"
 date: 2024-09-27T07:30:31-04:00
 description: "Links and things for the week ending 2024-09-27"
 aliases:

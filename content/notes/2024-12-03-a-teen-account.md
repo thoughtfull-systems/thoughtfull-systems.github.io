@@ -1,5 +1,5 @@
 ---
-title: "A Teen Account"
+title: "A teen account"
 date: 2024-12-03T20:59:00-05:00
 ---
 I have a couple of teens (Son and Daughter both <18) who need to get paid money, by me and other people.  When I started looking into this Son was getting his first job and needed direct deposit.  Daughter is making money hand over fist watching neighbors' animals and plants.  I thought there would be some kind of banking or fintech product that would work.  Preferably a banking product.  I looked into the options and (SPOILER ALERT) there aren't great options.
@@ -10,7 +10,7 @@ I have a couple of teens (Son and Daughter both <18) who need to get paid money,
 
 My first choice would be a credit union, and, in fact, I opened a checking and savings account at Alliant for Son.  Credit unions are member owned, and I feel like that's a much better model for a bank than shareholder owned.
 
-Alliant is a pretty great credit union, and I've been a member myself for nearly a decade, they have pretty good savings rates (I'm also a member of PenFed and DCU).
+Alliant is a pretty great credit union, and I've been a member myself for nearly a decade (I'm also a member of PenFed and DCU), they have pretty good savings rates.
 
 Son is now >18 and can do whatever he wants.  I feel like that's a great start for him, but it does not support Zelle, which is a bummer (see: later).
 
@@ -26,7 +26,7 @@ I really needed Venmo, or Zelle, because that's the way people pay other people 
 
 ### Zelle
 
-I have since learned that your bank doesn't need to support Zelle.  You can install an app on your smart phone and link any debit card.  Now you can Zelle.
+I have since learned that your bank doesn't need to support Zelle.  You install an app on your smart phone and link any debit card and now you can Zelle.
 
 This is great, but it requires a smart phone (see: later).
 
