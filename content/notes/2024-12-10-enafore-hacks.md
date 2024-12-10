@@ -37,4 +37,12 @@ My lawyer (if I had one) said I have to publish this code, since it's AGPL'ed an
 
 One thing I'm still figuring out is where is the line between client and server.  I've configured Enafore to not show replies in my timeline, but Tusky still does because I guess that's a client configuration?  I've also turned off boosts for some of my follows, and this (surprise!) works across clients.  That's kind of annoying, but I guess it's the cost of sovereignty.
 
+
+Discuss on:
+- [ X](https://x.com/technosophist/status/1866613342032249212)
+- [Bluesky](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lcycleeaik2r)
+- [ActivityPub](https://enafore.thoughtfull.systems/statuses/01JESBJASSVGHHXMHAJNCZJT3T/social.thoughtfull.systems/@technosophist/statuses/01JESBJASSVGHHXMHAJNCZJT3T)
+
+
 [^1]: I was pretty confused for a while and kept using the wrong one, but I think I've got it straight now.
+
