@@ -2,6 +2,10 @@
 title: "A teen account"
 date: 2024-12-03T20:59:00-05:00
 ---
+{{<alert>}}
+As of 2025-04-01 Zelle will no longer offer their own app.  You must use Zelle through your bank's app, which means your bank must to support it.  No more workaround!
+{{</alert>}}
+
 I have a couple of teens (Son and Daughter both <18) who need to get paid money, by me and other people.  When I started looking into this Son was getting his first job and needed direct deposit.  Daughter is making money hand over fist watching neighbors' animals and plants.  I thought there would be some kind of banking or fintech product that would work.  Preferably a banking product.  I looked into the options and (SPOILER ALERT) there aren't great options.
 
 ## Options
@@ -24,11 +28,11 @@ At the time I was evaluating the options, there was a sign up bonus for the MONE
 
 I really needed Venmo, or Zelle, because that's the way people pay other people for things these days.
 
-### Zelle
+### ~~Zelle~~
 
-I have since learned that your bank doesn't need to support Zelle.  You install an app on your smart phone and link any debit card and now you can Zelle.
+~~I have since learned that your bank doesn't need to support Zelle.  You install an app on your smart phone and link any debit card and now you can Zelle.~~
 
-This is great, but it requires a smart phone (see: later).
+~~This is great, but it requires a smart phone (see: later).~~
 
 ### Venmo
 
@@ -56,7 +60,7 @@ Nope, the best thing you can do in 2024 is create a Google calendar reminder to 
 
 ## Conclusion
 
-Alliant or CapitalOne MONEY could work.  If you want Zelle just connect it to your debit card.  If you want Venmo, then your teen needs a smart phone (or at least a phone number).
+Alliant or CapitalOne MONEY could work.  ~~If you want Zelle just connect it to your debit card.~~  If you want Venmo, then your teen needs a smart phone (or at least a phone number).
 
 If you want to setup a recurring payment, then you must use carrier pigeons.  Good luck!
 
