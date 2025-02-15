@@ -41,7 +41,7 @@ One thing I'm still figuring out is where is the line between client and server.
 Discuss on:
 - [ X](https://x.com/technosophist/status/1866613342032249212)
 - [Bluesky](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lcycleeaik2r)
-- [ActivityPub](https://enafore.thoughtfull.systems/statuses/01JESBJASSVGHHXMHAJNCZJT3T/social.thoughtfull.systems/@technosophist/statuses/01JESBJASSVGHHXMHAJNCZJT3T)
+- [ActivityPub](https://social.thoughtfull.systems/@technosophist/statuses/01JESBJASSVGHHXMHAJNCZJT3T)
 
 
 [^1]: I was pretty confused for a while and kept using the wrong one, but I think I've got it straight now.
