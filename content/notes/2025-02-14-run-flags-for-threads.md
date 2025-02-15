@@ -71,3 +71,8 @@ I finally realized a simple way to accomplish this is to use a promise.  I can d
 The deref will return instantly and the loop exit when I deliver false.  This is much simpler than an inner loop.
 
 An atom introduces latency when stopping a thread, breaking a longer sleep into short naps is more complicated, but deref with a timeout on a promise does the trick!
+
+Discuss on:
+- [ X](https://x.com/technosophist/status/1890576479328538982)
+- [Bluesky](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3li6lha42cs2q)
+- [ActivityPub](https://social.thoughtfull.systems/@technosophist/statuses/01JM3M460RBAQ1T5PPKDD8RR4K)
