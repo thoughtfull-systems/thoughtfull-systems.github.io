@@ -3,7 +3,39 @@ title: "Run flags for threads"
 date: 2025-02-14T19:35:00-05:00
 ---
 
-How do you stop a background thread simply and instantly?
+How do you gracefully stop a background thread simply and instantly?
+
+## Thread/.interrupt
+
+The first option you should consider is `Thread/.interrupt`.[^1] This is built-in to the JVM and the
+preferred way to stop a thread (as opposed to `Thread/.stop` which is broken and deprecated).
+
+```clojure {linenos=table}
+(let [f (future
+          (while (not (Thread/interrupted))
+            (try
+              (do-some-work)
+              (Thread/sleep 1000)
+            (catch InterruptedException _))))]
+  ,,,
+  (future-cancel f))
+```
+
+{{<alert "circle-info">}}
+In this case I'm using `future-cancel` which does two things: it tries to stop the future from ever
+starting, or if it has already started then it will interrupt it.  I'm going to just refer to this
+as `Thread/.interrupt`.
+{{</alert>}}
+
+There may be other reasons, but the main undesirability is the forcefulness.  If the thread is in
+I/O or `Object/.wait` or `Thread/sleep` (or other situations), then interrupting it will throw an
+`InterruptedException`.  I'd like a method for graceful shutdown that allows `do-some-work` to
+complete before stopping the thread, rather than forcing it to throw an `InterruptedException` in
+the middle of `do-some-work` and its call tree.
+
+Interruption should be a last resort to force an unresponsive thread to stop, not for ordinary,
+graceful shutdown.  I would ask it nicely to stop first, and if it does not stop after an elapsed
+timeout, then as a backstop I would force it with `Thread/.interrupt`.
 
 ## An atom
 
@@ -12,14 +44,10 @@ I have often used an atom containing a boolean as a flag to control a background
 ```clojure {linenos=table}
 (let [running? (atom true)]
   (future
-    (loop []
-      (when @running?
-        (do-some-work)
-        (Thread/sleep 1000)
-        (recur))))
-
+    (while @running?
+      (do-some-work)
+      (Thread/sleep 1000)))
   ,,,
-
   (reset! running? false))
 ```
 
@@ -29,21 +57,15 @@ This works, but the problem is the thread could be sleeping when I reset the ato
 
 My first thought was to try some kind of inner loop, only sleep for 100 milliseconds at a time and check the atom, then after enough 100 millisecond intervals add up, go back to the top of the loop.
 
-```clojure
+```clojure {linenos=table}
 (let [running? (atom true)]
   (future
-    (loop []
-      (when @running?
-        (do-some-work)
-        (let [end (+ (System/currentTimeMillis) 1000)]
-          (loop []
-            (when (and @running? (< (System/currentTimeMillis) end))
-              (Thread/sleep 100)
-              (recur))))
-        (recur))))
-
+    (while @running?
+      (do-some-work)
+      (let [end (+ (System/currentTimeMillis) 1000)]
+        (while (and @running? (< (System/currentTimeMillis) end))
+          (Thread/sleep 100)))))
   ,,,
-
   (reset! running? false))
 ```
 
@@ -55,24 +77,23 @@ Ideally we'd be able to instantly stop a thread.  I want a way to sleep interrup
 
 I finally realized a simple way to accomplish this is to use a promise.  I can deref the promise with a timeout.
 
-```clojure
+```clojure {linenos=table}
 (let [running? (promise)]
   (future
-    (loop []
-      (when (deref running? 1000 true)
-        (do-some-work)
-        (recur))))
-
+    (while (deref running? 1000 true)
+      (do-some-work)))
   ,,,
-
   (deliver running? false))
 ```
 
 The deref will return instantly and the loop exit when I deliver false.  This is much simpler than an inner loop.
 
-An atom introduces latency when stopping a thread, breaking a longer sleep into short naps is more complicated, but deref with a timeout on a promise does the trick!
+`Thread/.interrupt` is too forceful, an atom introduces latency when stopping a thread, breaking a longer sleep into short naps is more complicated, but deref with a timeout on a promise does the trick!
+
+[^1]: Thanks to jpmonettas for bringing this up on [Clojurians slack](http://clojurians.net/) and the ensuing discussion!
 
 Discuss on:
 - [ X](https://x.com/technosophist/status/1890576479328538982)
 - [Bluesky](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3li6lha42cs2q)
 - [ActivityPub](https://social.thoughtfull.systems/@technosophist/statuses/01JM3M460RBAQ1T5PPKDD8RR4K)
+- [Slack](https://clojurians.slack.com/archives/C8NUSGWG6/p1742811936759759)
