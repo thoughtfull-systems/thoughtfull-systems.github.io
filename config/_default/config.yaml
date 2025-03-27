@@ -6,6 +6,7 @@
 defaultContentLanguage: "en"
 
 enableRobotsTXT: true
+enableGitInfo: true
 paginate: 10
 summaryLength: 0
 theme: "congo"
