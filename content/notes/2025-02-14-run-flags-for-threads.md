@@ -1,7 +1,7 @@
 ---
 date: 2025-02-14T19:35:00-05:00
 title: "Run flags for polling threads"
-description: "When you have a check/sleep loop, how do you gracefully stop a polling thread simply and instantly?"
+description: "How do you gracefully stop a polling thread simply and instantly?"
 ---
 
 When a thread must wait `Thread/sleep` is usually the wrong thing to reach for.  It is best for a
