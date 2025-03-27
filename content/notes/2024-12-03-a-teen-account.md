@@ -64,7 +64,4 @@ Alliant or CapitalOne MONEY could work.  ~~If you want Zelle just connect it to 
 
 If you want to setup a recurring payment, then you must use carrier pigeons.  Good luck!
 
-Discuss on:
-- [ X](https://x.com/technosophist/status/1864142875203657829)
-- [Bluesky](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lch5zyiss22z)
-- [ActivityPub](https://social.thoughtfull.systems/@technosophist/statuses/01JE7ST4NTYG7XPS7GYKCHW302)
+Discuss: [{{<icon fediverse>}}](https://social.thoughtfull.systems/@technosophist/statuses/01JE7ST4NTYG7XPS7GYKCHW302) [{{<icon x-twitter>}}](https://x.com/technosophist/status/1864142875203657829) [{{<icon bluesky>}}](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lch5zyiss22z)
