@@ -86,3 +86,9 @@ fingerprintAlgorithm = "sha256"
   # bing = ""
   # pinterest = ""
   # yandex = ""
+
+[author]
+  links = [ { github = "https://github.com/technosophist" },
+            { gotosocial = "https://social.thoughtfull.systems/@technosophist" },
+            { x = "https://x.com/technosophist" },
+            { bluesky = "https://bsky.app/profiles/technosophist.thoughtfull.systems" } ]
