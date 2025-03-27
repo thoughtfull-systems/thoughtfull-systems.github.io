@@ -2,6 +2,8 @@
 date: 2025-02-14T19:35:00-05:00
 title: "Run flags for polling threads"
 description: "How do you gracefully stop a polling thread simply and instantly?"
+aliases:
+- 2025-02-14-run-flags-for-threads
 ---
 
 When a thread must wait `Thread/sleep` is usually the wrong thing to reach for.  It is best for a
