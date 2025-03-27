@@ -89,6 +89,9 @@ fingerprintAlgorithm = "sha256"
 
 [author]
   links = [ { github = "https://github.com/technosophist" },
-            { gotosocial = "https://social.thoughtfull.systems/@technosophist" },
-            { x = "https://x.com/technosophist" },
-            { bluesky = "https://bsky.app/profiles/technosophist.thoughtfull.systems" } ]
+            { codeberg = "https://codeberg.org/technosophist" },
+            { gitlab = "https://gitlab.com/technosophist" },
+            { fediverse = "https://social.thoughtfull.systems/@technosophist" },
+            { x-twitter = "https://x.com/technosophist" },
+            { bluesky = "https://bsky.app/profiles/technosophist.thoughtfull.systems" },
+            { reddit = "https://www.reddit.com/user/technosophist/" } ]
