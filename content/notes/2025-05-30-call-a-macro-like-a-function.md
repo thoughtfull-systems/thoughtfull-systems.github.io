@@ -3,7 +3,7 @@ title: "Call a macro like a function"
 date: 2025-05-30T14:45:33-04:00
 ---
 
-You can expand your macro into a use of another macro, but then you don't get a chance to change the generated code that results from the other macro.
+If you want to reuse a macro, you can expand your macro into a use of another macro, but then you don't get a chance to change the generated code that results from the other macro.
 
 ```clojure
 (defmacro my-macro [& body]
