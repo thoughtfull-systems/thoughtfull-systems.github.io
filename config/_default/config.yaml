@@ -7,7 +7,8 @@ defaultContentLanguage: "en"
 
 enableRobotsTXT: true
 enableGitInfo: true
-paginate: 10
+pagination:
+  pagerSize: 10
 summaryLength: 0
 theme: "congo"
 
@@ -16,4 +17,4 @@ outputs:
 
 permalinks:
   page:
-    notes: "/notes/:filename/"
+    notes: "/notes/:contentbasename/"
