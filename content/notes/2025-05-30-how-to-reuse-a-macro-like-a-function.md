@@ -1,5 +1,5 @@
 ---
-title: "Call a macro like a function"
+title: "How to reuse a macro like a function"
 date: 2025-05-30T14:45:33-04:00
 ---
 
@@ -26,7 +26,7 @@ But sometimes you want to *reuse* a macro, like add some functionality to an exi
 
 It would be a pain to either recreate all that functionality, or limit your macro so it only supports some of the functionality of the original.
 
-What if you could reuse `defn` by just calling like you call `make-awesome` above?
+What if you could reuse `defn` by just calling it like you call `make-awesome` above?
 
 You can!
 
