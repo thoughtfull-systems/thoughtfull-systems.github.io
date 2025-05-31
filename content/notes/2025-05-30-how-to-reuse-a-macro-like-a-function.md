@@ -47,7 +47,7 @@ Discuss:
 {{<discuss-icon fediverse
 "https://social.thoughtfull.systems/@technosophist/statuses/01JWHA8CQF2ASTY15B0HHF51FP">}}
 {{<discuss-icon x-twitter
-"https://x.com/technosophist/status/1890576479328538982">}}
+"https://x.com/technosophist/status/1928532456442855704">}}
 {{<discuss-icon bluesky
 "https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lqfxcuki722l">}}
 {{<discuss-icon reddit
