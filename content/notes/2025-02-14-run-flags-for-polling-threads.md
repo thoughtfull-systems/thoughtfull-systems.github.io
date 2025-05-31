@@ -150,4 +150,14 @@ deref with a timeout on a promise.
 [^1]: Thanks to jpmonettas for bringing this up on [Clojurians slack](http://clojurians.net/) and the ensuing discussion!
 [^2]: Thanks to pwab for bringing this up on the [Reddit discussion](https://www.reddit.com/r/Clojure/comments/1jl3mrl/comment/mk1atpu/)!  I should have thought of this before, but I have a bias against core.async.
 
-Discuss: {{<discuss-icon slack "https://clojurians.slack.com/archives/C8NUSGWG6/p1742811936759759">}} {{<discuss-icon fediverse "https://social.thoughtfull.systems/@technosophist/statuses/01JM3M460RBAQ1T5PPKDD8RR4K">}} {{<discuss-icon x-twitter "https://x.com/technosophist/status/1890576479328538982">}} {{<discuss-icon bluesky "https://bsky.app/profile/technosophist.thoughtfull.systems/post/3li6lha42cs2q">}} {{<discuss-icon reddit "https://www.reddit.com/r/Clojure/comments/1jl3mrl/run_flags_for_polling_threads/">}}
+Discuss:
+{{<discuss-icon slack
+"https://clojurians.slack.com/archives/C8NUSGWG6/p1742811936759759">}}
+{{<discuss-icon fediverse
+"https://social.thoughtfull.systems/@technosophist/statuses/01JM3M460RBAQ1T5PPKDD8RR4K">}}
+{{<discuss-icon x-twitter
+"https://x.com/technosophist/status/1890576479328538982">}}
+{{<discuss-icon bluesky
+"https://bsky.app/profile/technosophist.thoughtfull.systems/post/3li6lha42cs2q">}}
+{{<discuss-icon reddit
+"https://www.reddit.com/r/Clojure/comments/1jl3mrl/run_flags_for_polling_threads/">}}

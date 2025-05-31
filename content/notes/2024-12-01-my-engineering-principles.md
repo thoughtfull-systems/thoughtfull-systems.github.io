@@ -25,4 +25,10 @@ These guiding engineering principles are numbered for easy reference.  The order
 1. **Changes should be non-breaking.**  Accept more lenient inputs.  Choose defaults for new inputs.  Produce stricter outputs.  Choose new names for new functionality (namespaces are helpful here).
 1. **Things should self-describe and require as little context as possible.**  The more you can understand directly and locally the easier it is to use, understand, and extend.
 
-Discuss: [{{<icon fediverse>}}](https://social.thoughtfull.systems/@technosophist/statuses/01JE277D24ZJZ0MM33XE7TC157) [{{<icon x-twitter>}}](https://x.com/technosophist/status/1863398149450014783) [{{<icon bluesky>}}](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lcbypgkm2s2j)
+Discuss:
+{{<discuss-icon fediverse
+"https://social.thoughtfull.systems/@technosophist/statuses/01JE277D24ZJZ0MM33XE7TC157">}}
+{{<discuss-icon x-twitter
+"https://x.com/technosophist/status/1863398149450014783">}}
+{{<discuss-icon bluesky
+"https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lcbypgkm2s2j">}}
