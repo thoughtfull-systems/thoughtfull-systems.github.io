@@ -10,7 +10,7 @@ enableGitInfo: true
 pagination:
   pagerSize: 10
 summaryLength: 0
-theme: "congo"
+theme: "congo-2.11.0"
 
 outputs:
   home: ["HTML", "RSS", "JSON"]
