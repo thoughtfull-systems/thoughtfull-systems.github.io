@@ -41,4 +41,14 @@ A macro is "just" a function called at compile-time with two secret arguments: `
 
 If you want to do more than just expand to another macro or factor your macro into helper functions, you can reuse a macro by calling it like a function!
 
-Discuss: {{<discuss-icon slack "https://clojurians.slack.com/archives/C8NUSGWG6/p1748632891959909">}} [{{<icon fediverse>}}](https://social.thoughtfull.systems/@technosophist/statuses/01JWHA8CQF2ASTY15B0HHF51FP) [{{<icon x-twitter>}}](https://x.com/technosophist/status/1928532456442855704) [{{<icon bluesky>}}](https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lqfxcuki722l)
+Discuss:
+{{<discuss-icon slack
+"https://clojurians.slack.com/archives/C8NUSGWG6/p1748632891959909">}}
+{{<discuss-icon fediverse
+"https://social.thoughtfull.systems/@technosophist/statuses/01JWHA8CQF2ASTY15B0HHF51FP">}}
+{{<discuss-icon x-twitter
+"https://x.com/technosophist/status/1890576479328538982">}}
+{{<discuss-icon bluesky
+"https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lqfxcuki722l">}}
+{{<discuss-icon reddit
+"https://www.reddit.com/r/Clojure/comments/1kzsygx/how_to_reuse_a_macro_like_a_function/">}}
