@@ -3,18 +3,18 @@ label = "English"
 direction = "ltr"
 weight = 1
 
-title = "Thoughtfull Systems"
+title = "Congo"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
   dateFormat = "2 January 2006"
 
-  # mainSections = [ "topics", "notes" ]
-  description = "Having fun discovering how things work and why they're here."
+  # mainSections = ["section1", "section2"]
+  # description = "My awesome website"
 
 [params.author]
-  name = "technosophist"
-  # image = "img/logo-100.png"
+  # name = "Your name here"
+  # image = "img/author.jpg"
   # headline = "I'm only human"
   # bio = "A little bit about you"
   # links = [
@@ -38,6 +38,7 @@ title = "Thoughtfull Systems"
   #   { instagram = "https://instagram.com/username" },
   #   { keybase = "https://keybase.io/username" },
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
+  #   { kofi = "https://ko-fi.com/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
   #   { linkedin = "https://linkedin.com/in/username" },
   #   { mastodon = "https://mastodon.instance/@username" },
@@ -55,10 +56,12 @@ title = "Thoughtfull Systems"
   #   { stack-overflow = "https://stackoverflow.com/users/userid/username" },
   #   { steam = "https://steamcommunity.com/profiles/userid" },
   #   { telegram = "https://t.me/username" },
+  #   { threads = "https://threads.net/@username" },
   #   { tiktok = "https://tiktok.com/@username" },
   #   { tumblr = "https://username.tumblr.com" },
   #   { twitch = "https://twitch.tv/username" },
   #   { whatsapp = "https://wa.me/phone-number" },
   #   { x-twitter = "https://twitter.com/username" },
   #   { youtube = "https://youtube.com/username" },
+  #   { xing = "https://xing.com/profile/username" },
   # ]
