@@ -12,6 +12,9 @@ pagination:
 summaryLength: 0
 theme: "congo-2.14.0"
 
+# Notes are the site's articles; drives the home listing, RSS, and recent lists.
+mainSections: ["notes"]
+
 outputs:
   home: ["HTML", "RSS", "JSON"]
 

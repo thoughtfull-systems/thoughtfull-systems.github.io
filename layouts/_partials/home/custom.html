@@ -1,0 +1,28 @@
+{{/*
+  Custom homepage: the site intro (from content/_index.md) followed by a
+  reverse-chronological listing of all notes, grouped by year. Mirrors the
+  year-heading markup in the theme's list.html for a consistent look.
+*/}}
+<article class="prose max-w-full dark:prose-invert">
+  {{ with .Title }}
+    <header>
+      <h1>{{ . | emojify }}</h1>
+    </header>
+  {{ end }}
+  <section>{{ .Content | emojify }}</section>
+</article>
+
+{{ $notes := where site.RegularPages "Section" "notes" }}
+{{ if $notes }}
+  <section>
+    {{ range $notes.GroupByDate "2006" }}
+      <h2 class="mt-12 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
+        {{ .Key }}
+      </h2>
+      <hr class="w-36 border-dotted border-neutral-400" />
+      {{ range .Pages }}
+        {{ partial "article-link.html" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}

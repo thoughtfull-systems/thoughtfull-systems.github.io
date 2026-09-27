@@ -51,6 +51,27 @@ author's bio), change only the infrastructure part and leave the prose untouched
   replacing the directory under `themes/` and updating `theme:` in
   `config/_default/config.yaml`.
 
+## Content structure & URLs
+
+- **Notes** (`content/notes/`) are the site's articles. The homepage
+  (`layouts/_partials/home/custom.html`, selected via `homepage.layout =
+  "custom"`) shows the intro from `content/_index.md` followed by all notes
+  grouped by year, reverse-chronological.
+- **Topics** are a taxonomy (tags), *not* a content section — defined in
+  `config/_default/taxonomies.toml` (`topic = "topics"`). `/topics/` lists every
+  topic; `/topics/<topic>/` lists that topic's notes. The only nav item,
+  "Topics", points there. Tag a note by adding `topics: ["..."]` to its front
+  matter. There are no "topic" articles.
+- **Listing summaries**: a note shows a blurb in listings *only* when the author
+  writes a manual summary — a `summary:` front-matter field or a `<!--more-->`
+  divider in the body. Auto-generated excerpts are off (`summaryLength: 0`), and
+  the SEO `description` is never shown in listings (it feeds meta/social tags
+  only). This lives in the local override `layouts/_partials/article-link.html`.
+- **Note URLs**: the permalink is `/notes/:contentbasename/`, so the slug is the
+  filename. To keep the date out of the URL, name new note files *without* a
+  `YYYY-MM-DD-` prefix and put the date in front matter (`date:`). Existing
+  dated filenames keep their current URLs — do not rename them.
+
 ## Prose linting (Vale)
 
 - `content/**/*.md` is linted with [Vale](https://vale.sh/) using proselint,

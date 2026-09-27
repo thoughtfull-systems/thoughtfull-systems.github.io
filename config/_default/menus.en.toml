@@ -12,13 +12,8 @@
 
 [[main]]
   name = "Topics"
-  pageRef = "topics"
+  pageRef = "/topics/"
   weight = 10
-
-[[main]]
-  name = "Notes"
-  pageRef = "notes"
-  weight = 20
 
 [[main]]
   identifier = "locale"
