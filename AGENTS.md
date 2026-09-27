@@ -51,6 +51,19 @@ author's bio), change only the infrastructure part and leave the prose untouched
   replacing the directory under `themes/` and updating `theme:` in
   `config/_default/config.yaml`.
 
+## Prose linting (Vale)
+
+- `content/**/*.md` is linted with [Vale](https://vale.sh/) using proselint,
+  write-good, and Vale's built-in spelling. Config is in `.vale.ini`; styles and
+  the project vocabulary are vendored under `.vale/`.
+- A devenv-managed **pre-commit hook blocks the commit on any Vale finding**
+  (`MinAlertLevel = suggestion`). Run `lint` to check all content on demand.
+- The hook flags prose; **the fix is the author's** (reword, or accept the
+  finding). Infrastructure-side, you may: add a legitimate term to
+  `.vale/styles/config/vocabularies/Blog/accept.txt`, disable/adjust a rule in
+  `.vale.ini`, or run `vale sync` after changing `Packages`. Do not reword the
+  author's sentences to satisfy the linter.
+
 ## Git
 
 - Commit or push only when the author asks.
