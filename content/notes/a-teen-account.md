@@ -1,6 +1,11 @@
 ---
 title: "A teen account"
 date: 2024-12-03T20:59:00-05:00
+aliases:
+  - 2024-12-03-a-teen-account
+build:
+  list: never
+  render: always
 ---
 {{<alert>}}
 As of 2025-04-01 Zelle will no longer offer their own app.  You must use Zelle through your bank's app, which means your bank must to support it.  No more workaround!
@@ -20,9 +25,9 @@ Son is now >18 and can do whatever he wants.  I feel like that's a great start f
 
 ### Banks
 
-For Daughter I was thinking seriously about a CapitalOne MONEY account.  It seemed like a pretty great product.  I have used CaptialOne for a number of years and find them to be a decent bank.  Their tech is modern and simple.
+For Daughter I was thinking seriously about a CapitalOne MONEY account.  It seemed like a pretty great product.  I have used CaptialOne for years and find them to be a decent bank.  Their tech is modern and simple.
 
-They advertise it as supporting Zelle.  I don't actually remember at this point if that was a feature that was coming, or if it was available when I did my evaluation.  They say you can send money with Zelle, but can you receive money?  I don't know why you wouldn't be able to.
+They advertise it as supporting Zelle.  I don't actually remember at this point if that was a feature that was coming or available when I did my evaluation.  They say you can send money with Zelle, but can you receive money?  I don't know why you wouldn't be able to.
 
 At the time I was evaluating the options, there was a sign up bonus for the MONEY account which I thought would have been a great extra.
 
@@ -36,25 +41,25 @@ I really needed Venmo, or Zelle, because that's the way people pay other people 
 
 ### Venmo
 
-Speaking of smart phones, Venmo requires a smart phone, and everyone wants to pay Daughter with Venmo.  So I looked into it.  They have a teen account.  I thought maybe I could setup a second Venmo with my phone, but, no, you need a unique phone number.  We have a "house phone" which is just a dumb cell phone, so I used that as her "number."  At first I thought we could just install Venmo on her Chromebook.  It's basically an Android device, right?  Wrong.
+Speaking of smart phones, Venmo requires a smart phone, and everyone wants to pay Daughter with Venmo, so I looked into it.  They have a teen account.  I thought maybe I could setup a second Venmo with my phone, but, no, you need a unique phone number.  We have a "house phone" which is just a dumb cellphone, so I used that as her "number."  At first I thought we could just install Venmo on her Chromebook.  It's basically an Android device, right?  Wrong.
 
-But I was able to install Venmo in a separate user profile on my Android just using the "house phone" as her number.  It's hacky, but it works.  People can Venmo her, and if she wants to send money to me I just switch to the other profile on my own phone and send money to my own self.  It's ridiculous, but this is what technology has reduced us to... like animals.
+I was able to install Venmo in a separate user profile on my Android just using the "house phone" as her number.  It's hacky, but it works.  People can Venmo her, and if she wants to send money to me I just switch to the other profile on my own phone and send money to my own self.  It's ridiculous, but this is what technology has reduced us to… like animals.
 
 The Venmo Teen account does come with a linked debit card, so theoretically she could use it to buy stuff, but in reality she just hoards her money and never spends it.
 
 ## Pain points
 
-So where we ended up is Son has an Alliant account and Daughter has a Venmo Teen account.  This kind of works, but also has pain points.
+Where we ended up is Son has an Alliant account and Daughter has a Venmo Teen account.  This kind of works, but also has pain points.
 
 ### Smart phones
 
-Part of the problem with all of the technology is it requires having a smart phone.  I'm not prepared to get a smart phone for my teen just because she needs a bank account.  My workaround was to just use a Frankenstein combo of my smart phone and a dumb cell phone.  It's 2024.  Why can't people just send money to each other?  I blame the Democrats (or the Republicans (or both)).
+Part of the problem with the technology is it requires having a smart phone.  I'm not prepared to get a smart phone for my teen just because she needs a bank account.  My workaround was to just use a Frankenstein combo of my smart phone and a dumb cellphone.  It's 2024.  Why can't people just send money to each other?  I blame the Democrats (or the Republicans (or both)).
 
-If your teen does not have a smart phone, then expect pain, but, on the other hand, if your teen has a smart phone then expect them to be suicidal because: social media?  I'll take the first thing, but I will also burn with a vague rage at all things financial and technological and also sadness that the world isn't a better place, technologically speaking.
+If your teen does not have a smart phone, then expect pain, but, if your teen has a smart phone then expect them to be suicidal because: social media?  I'll take the first thing, but I will also burn with a vague rage at all things financial and technological and also sadness that the world isn't a better place, technologically speaking.
 
 ### Recurring payment
 
-Pretend you have a son who drives to school (completely hypothetical situation), and you'd like to reimburse him for gas.  It is easy to setup a recurring payment to your own kin!  Incorrect!!  You are so näive for even thinking that.  Maybe you try Zelle, but it doesn't support recurring payments.  Maybe you try member-to-member transfers at Alliant; it also does not support recurring payments.  Paypal, nope!  Venmo, nope!  Perhaps BillPay, but is your teen really going to cash a "check?"
+Pretend you have a son who drives to school (<!-- vale write-good.Weasel = NO -->completely<!-- vale write-good.Weasel = YES --> hypothetical situation), and you'd like to reimburse him for gas.  It's easy to setup a recurring payment to your own kin!  Incorrect!!  You are so näive for even thinking that.  Maybe you try Zelle, but it doesn't support recurring payments.  Maybe you try member-to-member transfers at Alliant; it also does not support recurring payments.  PayPal, nope!  Venmo, nope!  Perhaps BillPay, but is your teen really going to cash a "check?"
 
 Nope, the best thing you can do in 2024 is create a Google calendar reminder to yourself to weekly, manually transfer money.  Congratulations!  You live in an advanced economy!
 

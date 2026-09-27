@@ -9,7 +9,7 @@ boingboing
 boolean
 chans
 Chapelle
-Clojurians
+[Cc]lojurians
 commentarious
 deref
 docstring

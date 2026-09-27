@@ -1,6 +1,11 @@
 ---
 title: "How to reuse a macro like a function"
 date: 2025-05-30T14:45:33-04:00
+aliases:
+  - 2025-05-30-how-to-reuse-a-macro-like-a-function
+build:
+  list: never
+  render: always
 ---
 
 If you want to reuse a macro, you can expand your macro into a use of another macro, but then you don't get a chance to change the generated code that results from the other macro.
@@ -20,9 +25,9 @@ Another way to reuse code in macros is by splitting it into helper functions:
     `(do ~@body')))
 ```
 
-In this case, `make-awesome` will take code as data and return data and can be used in multiple macros.  That's fine.
+In this case, `make-awesome` will take code as data and return data and you can use it in macros.  That's fine.
 
-But sometimes you want to *reuse* a macro, like add some functionality to an existing macro.  For example, suppose you want to riff on `defn`.  `defn` has some complicated syntax.  It can take an optional docstring.  It can take a param vector for a single arity then a body.  It can take multiple arities each with a param vector and body (and optional pre and post conditions!)
+Sometimes you want to *reuse* a macro, like add some functionality to an existing macro.  For example, suppose you want to riff on `defn`.  `defn` has some complicated syntax.  It can take an optional docstring.  It can take a param vector for a single arity then a body.  It can take more than one arity each with a param vector and body (and optional pre- and post-conditions!)
 
 It would be a pain to either recreate all that functionality, or limit your macro so it only supports some of the functionality of the original.
 

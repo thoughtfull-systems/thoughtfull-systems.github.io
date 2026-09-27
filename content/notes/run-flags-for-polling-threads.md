@@ -3,21 +3,25 @@ date: 2025-02-14T19:35:00-05:00
 title: "Run flags for polling threads"
 description: "How do you gracefully stop a polling thread simply and instantly?"
 aliases:
-- 2025-02-14-run-flags-for-threads
+  - 2025-02-14-run-flags-for-threads
+  - 2025-02-14-run-flags-for-polling-threads
+build:
+  list: never
+  render: always
 ---
 
-When a thread must wait `Thread/sleep` is usually the wrong thing to reach for.  It is best for a
+When a thread must wait `Thread/sleep` is the wrong thing to reach for.  It's best for a
 thread to park waiting for something specific to happen like reading a socket or acquiring a lock.
 
-However, some threads poll external systems in a poll/sleep loop and there's not much you can do
+Some threads poll external systems in a poll/sleep loop and there's not much you can do
 about it.
 
 When you have a poll/sleep loop, how do you gracefully stop a polling thread simply and instantly?
 
 ## Thread/.interrupt
 
-The first option you should consider is `Thread/.interrupt`.[^1] This is built-in to the JVM and the
-preferred way to stop a thread (as opposed to `Thread/.stop` which is broken and deprecated).
+The first option you should consider is `Thread/.interrupt`.[^1] The JVM builds this in and it's the
+preferred way to stop a thread (as opposed to the broken and deprecated `Thread/.stop`).
 
 ```clojure {linenos=table}
 (let [f (future
@@ -80,7 +84,7 @@ then after enough 100 millisecond intervals add up, go back to the top of the lo
   (reset! running? false))
 ```
 
-This is better, but a bit more complicated (some auxiliary functions could help).  However, the
+This is better, but a bit more complicated (some auxiliary functions could help).  The
 problem still exists, I've just reduced it to a 100 millisecond interval.  In production I may not
 want to spin wait too tightly, but in test I want to spin as tightly and stop as quickly as
 possible, and it still piles up across a bunch of tests.
@@ -90,7 +94,7 @@ Ideally we'd be able to instantly stop a thread.  I want a way to sleep interrup
 
 ## A channel
 
-It is possible to use core.async to sleep interruptibly.[^2]
+It's possible to use core.async to sleep interruptibly.[^2]
 
 ```clojure {linenos=table}
 (let [stop (async/chan)]
@@ -107,7 +111,7 @@ instantly.
 
 ## A promise
 
-An even simpler way to accomplish this is to use a promise.
+An even simpler way is to use a promise.
 
 ```clojure {linenos=table}
 (let [running? (promise)]
@@ -135,17 +139,16 @@ Another option you have is to not even have a loop, but to use a `ScheduledExecu
   (.shutdown service))
 ```
 
-This is a simple and elegant solution.  However, this is not all upside.  A big drawback is the
-thread can only be asked to stop.  It has no control over exiting the loop early.
+This is a simple and elegant solution, but this is not all upside.  A big drawback is you can only ask the thread to stop.  It has no control over exiting the loop early.
 
 ## Conclusion
 
 `Thread/.interrupt` is too forceful, an atom introduces latency when stopping a thread, breaking a longer sleep into short naps is more complicated.
 
-There are three options that accomplish my goal of gracefully stopping a polling thread simply and instantly: using core.async chans with alts!!, deref with a timeout on a promise, or using an executor.
+Your options for gracefully stopping a polling thread simply and instantly are: using core.async chans with alts!!, deref with a timeout on a promise, or using an executor.
 
-There are trade-offs to each, however, I think the simplest, most applicable option is to simply
-deref with a timeout on a promise.
+Given the trade-offs I think the simplest, most applicable option is to simply deref with a timeout
+on a promise.
 
 [^1]: Thanks to jpmonettas for bringing this up on [Clojurians slack](http://clojurians.net/) and the ensuing discussion!
 [^2]: Thanks to pwab for bringing this up on the [Reddit discussion](https://www.reddit.com/r/Clojure/comments/1jl3mrl/comment/mk1atpu/)!  I should have thought of this before, but I have a bias against core.async.

@@ -2,6 +2,11 @@
 title: "Enafore hacks"
 date: 2024-12-10T16:40:00-05:00
 topics: [ "Fediverse" ]
+aliases:
+  - 2024-12-10-enafore-hacks
+build:
+  list: never
+  render: always
 ---
 As a relative noob to the fediverse, It surprised me to find that [GotoSocial](https://gotosocial.org/) (which I decided to use as my ActivityPub server) does not have a "UI."  It makes sense I guess, why not also federate the user experience?
 
