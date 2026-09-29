@@ -67,6 +67,12 @@ author's bio), change only the infrastructure part and leave the prose untouched
   divider in the body. Auto-generated excerpts are off (`summaryLength: 0`), and
   the SEO `description` is never shown in listings (it feeds meta/social tags
   only). This lives in the local override `layouts/_partials/article-link.html`.
+- **Unlisted / preview posts**: to publish a post that is reachable by URL but
+  hidden from every listing (homepage, topics, RSS, sitemap) — e.g. to share a
+  draft for feedback before publishing — add `build: { list: never }` to its
+  front matter. Delete that line to publish it. Do *not* use `draft: true` for
+  this: Hugo drops drafts from production entirely, and forcing them to render
+  would put them back into every listing/feed. `build` is the right tool.
 - **Note URLs**: the permalink is `/notes/:contentbasename/`, so the slug is the
   filename. To keep the date out of the URL, name new note files *without* a
   `YYYY-MM-DD-` prefix and put the date in front matter (`date:`). Existing
