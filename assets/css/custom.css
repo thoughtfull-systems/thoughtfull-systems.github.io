@@ -15,3 +15,23 @@
   height: 1.25em;
   width: 1.25em;
 }
+
+/* Widen the main text column (theme default: 65ch). The page container is
+   max-w-7xl (80rem) with lg:px-32 padding, so ~64rem is the hard ceiling. */
+.max-w-prose {
+  max-width: 80ch;
+}
+
+/* Keep the floating TOC from being squeezed by the wider text column: give it
+   a fixed width and let the text column take the remaining space. */
+@media (min-width: 1024px) {
+  div:has(> .toc) {
+    flex: 0 0 16rem;
+    max-width: none;
+  }
+}
+@media (min-width: 1280px) {
+  div:has(> .toc) {
+    flex-basis: 20rem;
+  }
+}
