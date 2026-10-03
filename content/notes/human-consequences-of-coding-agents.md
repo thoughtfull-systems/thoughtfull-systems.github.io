@@ -130,8 +130,8 @@ write software I am satisfying a human need.  That is beautiful, and now more pe
 
 Discuss:
 {{<discuss-icon fediverse
-"https://social.thoughtfull.systems/@technosophist/statuses/01JE7ST4NTYG7XPS7GYKCHW302">}}
+"https://social.thoughtfull.systems/@technosophist/statuses/01M418355H1JASR06QG8VW57ST">}}
 {{<discuss-icon x-twitter
-"https://x.com/technosophist/status/1864142875203657829">}}
+"https://x.com/technosophist/status/2106414863832764848">}}
 {{<discuss-icon bluesky
-"https://bsky.app/profile/technosophist.thoughtfull.systems/post/3lch5zyiss22z">}}
+"https://bsky.app/profile/technosophist.thoughtfull.systems/post/3mwyb77aros2o">}}
